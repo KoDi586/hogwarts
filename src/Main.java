@@ -32,10 +32,10 @@ public class Main {
         //вывожу описание студентов
         Hogwarts newHogw = new Hogwarts();
         System.out.println();
-//        System.out.println(newHogw.toString(harryPotter));
-//        System.out.println(newHogw.toString(dracoMalfoy));
-//        System.out.println(newHogw.toString(zachariahSmith));
-//        System.out.println(newHogw.toString(zhouChang));
+        System.out.println(newHogw.toString(harryPotter));
+        System.out.println(newHogw.toString(dracoMalfoy));
+        System.out.println(newHogw.toString(zachariahSmith));
+        System.out.println(newHogw.toString(zhouChang));
 
         //метод сравнивания студентов одного факультета
         Griffindor compareStudents = new Griffindor();
