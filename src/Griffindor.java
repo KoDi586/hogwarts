@@ -23,16 +23,16 @@ public class Griffindor extends Hogwarts{
                 ", bravery = " + bravery;
     }
 
-    public String compare(Griffindor first, Griffindor second) {
-        int firstCount = first.magic + first.transgression + first.nobility
-                + first.honor + first.bravery;
-        int secondCount = second.magic + second.transgression + second.nobility
-                + second.honor + second.bravery;
+    public String compare(Griffindor other) {
+        int thisCount = magic + transgression + nobility
+                + honor + bravery;
+        int otherCount = other.magic + other.transgression + other.nobility
+                + other.honor + other.bravery;
 
-        if (firstCount > secondCount) {
-            return first.fullName + "is Win!";
+        if (thisCount > otherCount) {
+            return fullName + "is Win!";
         } else {
-            return second.fullName + "is Win!";
+            return other.fullName + "is Win!";
         }
     }
 }

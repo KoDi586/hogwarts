@@ -27,19 +27,19 @@ public class Slizerin extends Hogwarts{
                 ", domineering = " + domineering;
     }
 
-    public String compare(Slizerin first, Slizerin second) {
-        int firstCount = first.magic + first.transgression + first.cunning
-                + first.determination + first.ambition
-                + first.resourcefulness + first.domineering;
+    public String compare(Slizerin other) {
+        int thisCount = magic + transgression + cunning
+                + determination + ambition
+                + resourcefulness + domineering;
 
-        int secondCount = second.magic + second.transgression + second.cunning
-                + second.determination + second.ambition
-                + second.resourcefulness + second.domineering;
+        int otherCount = other.magic + other.transgression + other.cunning
+                + other.determination + other.ambition
+                + other.resourcefulness + other.domineering;
 
-        if (firstCount > secondCount) {
-            return first.fullName + "is Win!";
+        if (thisCount > otherCount) {
+            return fullName + "is Win!";
         } else {
-            return second.fullName + "is Win!";
+            return other.fullName + "is Win!";
         }
     }
 }

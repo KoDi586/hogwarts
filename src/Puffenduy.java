@@ -22,16 +22,16 @@ public class Puffenduy extends Hogwarts{
                 ", honest = " + honest;
     }
 
-    public String compare(Puffenduy first, Puffenduy second) {
-        int firstCount = first.magic + first.transgression + first.hardworking
-                + first.loyal + first.honest;
-        int secondCount = second.magic + second.transgression + second.hardworking
-                + second.loyal + second.honest;
+    public String compare(Puffenduy other) {
+        int thisCount = magic + transgression + hardworking
+                + loyal + honest;
+        int otherCount = other.magic + other.transgression + other.hardworking
+                + other.loyal + other.honest;
 
-        if (firstCount > secondCount) {
-            return first.fullName + "is Win!";
+        if (thisCount > otherCount) {
+            return fullName + "is Win!";
         } else {
-            return second.fullName + "is Win!";
+            return other.fullName + "is Win!";
         }
     }
 }

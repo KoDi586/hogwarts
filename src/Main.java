@@ -1,15 +1,5 @@
 public class Main {
 
-    public static String compare(Hogwarts first, Hogwarts second) {
-        int firstCount = first.magic + first.transgression;
-        int secondCount = second.magic + second.transgression;
-
-        if (firstCount > secondCount) {
-            return first.fullName + "is Win!";
-        } else {
-            return second.fullName + "is Win!";
-        }
-    }
 
     public static void main(String[] args) {
 
@@ -38,13 +28,11 @@ public class Main {
         System.out.println(newHogw.toString(zhouChang));
 
         //метод сравнивания студентов одного факультета
-        Griffindor compareStudents = new Griffindor();
-        System.out.println(compareStudents.compare(harryPotter, ronWeasley));
-        Slizerin compareStudentss = new Slizerin();
-        System.out.println(compareStudentss.compare(dracoMalfoy, gregoryGoyle));
+        System.out.println(harryPotter.compare(ronWeasley));
+        System.out.println(dracoMalfoy.compare(gregoryGoyle));
 
         //метод сравнивания студентов разных факультетов
-        System.out.println(compare(harryPotter, dracoMalfoy));
+        System.out.println(hermioneGranger.compareHogwarts(padmaPatil));
 
     }
 }

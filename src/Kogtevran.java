@@ -25,16 +25,16 @@ public class Kogtevran extends Hogwarts{
                 ", witty = " + witty + ", creative = " + creative;
     }
 
-    public String compare(Kogtevran first, Kogtevran second) {
-        int firstCount = first.magic + first.transgression + first.smart
-                + first.wise + first.witty + first.creative;
-        int secondCount = second.magic + second.transgression + second.smart
-                + second.wise + second.witty + second.creative;
+    public String compare(Kogtevran other) {
+        int thisCount = magic + transgression + smart
+                + wise + witty + creative;
+        int otherCount = other.magic + other.transgression + other.smart
+                + other.wise + other.witty + other.creative;
 
-        if (firstCount > secondCount) {
-            return first.fullName + "is Win!";
+        if (thisCount > otherCount) {
+            return fullName + "is Win!";
         } else {
-            return second.fullName + "is Win!";
+            return other.fullName + "is Win!";
         }
     }
 }
